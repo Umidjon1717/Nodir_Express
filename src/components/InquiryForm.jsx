@@ -28,7 +28,7 @@ const APPLICATION_FIELDS = [
   {
     name: "consent",
     label:
-      "By providing my phone number and clicking submit, I consent to receive SMS notifications, application updates, and account messages from Nodir Express Inc by phone, email, and SMS about driving opportunities. Messaging frequency may vary. Message and data rates may apply. To opt out at any time, text STOP. For assistance, text HELP. SMS consent is not shared with third parties or affiliates.",
+      "I agree to be contacted by Nodir Express Inc by phone, email, and SMS about driving opportunities. Message and data rates may apply. Reply STOP to opt out, HELP for help.",
     type: "checkbox",
     required: true,
   },
@@ -42,7 +42,7 @@ const CONTACT_FIELDS = [
   {
     name: "consent",
     label:
-      "By providing my phone number and clicking submit, I consent to receive SMS notifications, conversational replies, and account updates from Nodir Express Inc about my inquiry. Messaging frequency may vary. Message and data rates may apply. To opt out at any time, text STOP. For assistance, text HELP. SMS consent is not shared with third parties or affiliates.",
+      "I agree to be contacted by Nodir Express Inc about my inquiry. Message and data rates may apply. Reply STOP to opt out, HELP for help.",
     type: "checkbox",
     required: true,
   },
