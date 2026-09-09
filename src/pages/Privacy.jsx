@@ -5,94 +5,146 @@ export default function Privacy() {
   return (
     <>
       <PageHeader eyebrow="Legal" title="Privacy Policy">
-        Last updated September 1, 2026
+        Effective Date: September 10, 2026
       </PageHeader>
 
       <section className="section">
         <div className="wrap narrow legal">
           <p>
-            {company.name} ("we," "us," or "our") operates this website. This policy explains what
-            information we collect, how we use it, and the choices you have.
+            <strong>Website URL:</strong>{" "}
+            <a href="#/">https://nodirexpress.vercel.app/</a>
           </p>
-
-          <h2>Information we collect</h2>
-          <ul>
-            <li>
-              <strong>Information you give us.</strong> Your name, phone number, email address, driver
-              and equipment details, current location, and any message content you submit through our
-              application or contact forms, or by calling, texting, or emailing us.
-            </li>
-            <li>
-              <strong>Usage information.</strong> Basic technical data such as browser type, device
-              type, and pages viewed, used to keep the site working and improve it.
-            </li>
-          </ul>
-
-          <h2>How we use your information</h2>
-          <ul>
-            <li>To respond to your inquiry and evaluate driver applications.</li>
-            <li>To contact you by phone, email, and SMS about freight, onboarding, and dispatch.</li>
-            <li>To operate, maintain, and improve our website and services.</li>
-            <li>To comply with legal, tax, safety, and DOT recordkeeping obligations.</li>
-          </ul>
-
-          <h2>SMS / text messaging</h2>
           <p>
-            When you provide your mobile number and agree to be contacted, we may send you
-            application updates, dispatch and load communications, and account-related messages.
-            Message frequency varies. Message and data rates may apply. Reply <strong>STOP</strong> to
-            opt out at any time and <strong>HELP</strong> for help. Consent to receive SMS is not a
-            condition of employment or of any purchase.
+            At {company.shortName}, we are committed to protecting your privacy and ensuring the
+            security of your personal information. This Privacy Policy explains how we collect, use,
+            and safeguard your personal data when you visit our website or interact with our services.
           </p>
+
+          <h2>1. Information We Collect</h2>
+          <p>
+            We collect personal information that you voluntarily provide to us when you fill out forms
+            on our website, contact us, or register for our services. This information may include:
+          </p>
+          <ul>
+            <li>
+              <strong>Contact Information:</strong> Full name, email address, phone number, and
+              physical mailing address.
+            </li>
+            <li>
+              <strong>Account &amp; Service Details:</strong> Service requests, inquiries, driver and
+              equipment details, and communication history.
+            </li>
+            <li>
+              <strong>Technical &amp; Usage Data:</strong> Information collected automatically when
+              you visit our site, including IP address, browser type, device information, and browsing
+              analytics.
+            </li>
+          </ul>
+
+          <h2>2. How Personal Information Is Used</h2>
+          <p>
+            We use the personal information collected for legitimate business purposes, including:
+          </p>
+          <ul>
+            <li>Providing, operating, and maintaining our services and website.</li>
+            <li>Processing requests, transactions, and sending operational updates.</li>
+            <li>
+              Communicating with you via email, phone calls, or SMS regarding your inquiry, account,
+              or service status.
+            </li>
+            <li>Improving website performance, user experience, and customer service.</li>
+            <li>Meeting legal, regulatory, and compliance requirements.</li>
+          </ul>
+
+          <h2>3. Disclosure &amp; Sharing of Personal Information</h2>
+          <p>
+            We do not sell, rent, or trade your personal information. We may share your personal data
+            only under the following limited circumstances:
+          </p>
+          <ul>
+            <li>
+              <strong>Service Providers:</strong> We may share information with trusted third-party
+              service providers (such as web hosting partners, data analytics providers, or payment
+              processors) who assist us in operating our website and conducting our business, strictly
+              under confidentiality agreements.
+            </li>
+            <li>
+              <strong>Legal Requirements:</strong> We may disclose information if required by law,
+              court order, or governmental regulations, or to protect the rights, property, and safety
+              of {company.shortName} and our users.
+            </li>
+          </ul>
+
+          <h2>4. SMS &amp; Mobile Information Privacy (Carrier Compliance)</h2>
           <p>
             <strong>
-              No mobile information will be shared with third parties or affiliates for marketing or
-              promotional purposes. Information sharing with subcontractors in support services, such
-              as customer service, is permitted. All other use case categories exclude text messaging
-              originator opt-in data and consent; this information will not be shared with any third
-              parties.
+              No mobile information will be shared with third parties/affiliates for
+              marketing/promotional purposes.
             </strong>
           </p>
-
-          <h2>How we share information</h2>
-          <p>We do not sell your personal information. We share it only:</p>
           <ul>
             <li>
-              With service providers who help us operate (for example, phone/SMS providers, email,
-              hosting, and settlement processing), under confidentiality obligations.
+              <strong>SMS Consent Non-Sharing Clause:</strong> All the above categories exclude text
+              messaging originator opt-in data and consent; this information will not be shared with
+              any third parties or affiliates under any circumstances.
             </li>
             <li>
-              With brokers, shippers, and insurers as needed to book and run freight you are assigned.
+              <strong>SMS Opt-In / Consent:</strong> Text messaging opt-in data and user consent are
+              kept strictly confidential and are used solely to deliver requested text communications
+              to you.
             </li>
-            <li>When required by law, subpoena, or to protect our rights and safety.</li>
           </ul>
-
-          <h2>Data retention</h2>
           <p>
-            We keep your information for as long as needed to provide our services and to meet legal
-            and regulatory requirements, then delete or de-identify it.
+            <strong>SMS consent is not shared with third parties or affiliates.</strong>
           </p>
 
-          <h2>Your choices</h2>
+          <h2>5. How to Opt-Out of SMS Communications</h2>
+          <p>
+            If you have opted in to receive SMS messages from {company.shortName}, you may opt out at
+            any time by replying <strong>STOP</strong> to any text message you receive from us. You
+            may also reply <strong>HELP</strong> for support or contact us directly using the contact
+            details below.
+          </p>
+
+          <h2>6. Data Security</h2>
+          <p>
+            We implement reasonable administrative, technical, and physical security measures to
+            protect your personal information against unauthorized access, alteration, disclosure, or
+            destruction. However, please note that no transmission over the Internet or electronic
+            storage method is 100% secure.
+          </p>
+
+          <h2>7. Accessing and Updating Your Information</h2>
+          <p>
+            You have the right to request access to, correction of, or deletion of the personal
+            information we hold about you. To submit a request, please contact us at the contact
+            information provided below.
+          </p>
+
+          <h2>8. Changes to This Privacy Policy</h2>
+          <p>
+            We reserve the right to update or modify this Privacy Policy at any time. Any changes will
+            be effective immediately upon posting the updated policy on our website at{" "}
+            <a href="#/">https://nodirexpress.vercel.app/</a>.
+          </p>
+
+          <h2>9. Contact Us</h2>
+          <p>If you have questions or concerns regarding this Privacy Policy, please contact us:</p>
           <ul>
-            <li>Opt out of SMS by replying STOP; opt out of email using the unsubscribe link.</li>
             <li>
-              Request access to, correction of, or deletion of your information by contacting us at{" "}
-              <a href={`mailto:${company.email}`}>{company.email}</a>.
+              <strong>Website:</strong> <a href="#/">https://nodirexpress.vercel.app/</a>
+            </li>
+            <li>
+              <strong>Email:</strong>{" "}
+              <a href={`mailto:${company.email}`}>{company.email}</a>
+            </li>
+            <li>
+              <strong>Phone:</strong> <a href={company.phoneHref}>{company.phone}</a>
+            </li>
+            <li>
+              <strong>Address:</strong> {company.addressLines[0]}, {company.addressLines[1]}
             </li>
           </ul>
-
-          <h2>Contact us</h2>
-          <p>
-            {company.name}
-            <br />
-            {company.addressLines[0]}
-            <br />
-            {company.addressLines[1]}
-            <br />
-            <a href={company.phoneHref}>{company.phone}</a> ·{" "}
-            <a href={`mailto:${company.email}`}>{company.email}</a>
-          </p>
         </div>
       </section>
     </>

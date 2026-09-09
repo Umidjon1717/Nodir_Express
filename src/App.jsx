@@ -30,7 +30,7 @@ const TITLES = {
   "/about": "About — Nodir Express Inc",
   "/contact": "Contact — Nodir Express Inc",
   "/privacy": "Privacy Policy — Nodir Express Inc",
-  "/sms-terms": "SMS Terms — Nodir Express Inc",
+  "/sms-terms": "SMS Terms of Service — Nodir Express Inc",
 };
 
 export default function App() {

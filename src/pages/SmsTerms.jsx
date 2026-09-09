@@ -4,54 +4,99 @@ import { company } from "../data.js";
 export default function SmsTerms() {
   return (
     <>
-      <PageHeader eyebrow="Legal" title="SMS Terms & Conditions">
-        Last updated September 1, 2026
+      <PageHeader eyebrow="Legal" title="SMS Terms & Conditions (Terms of Service)">
+        Effective Date: September 10, 2026
       </PageHeader>
 
       <section className="section">
         <div className="wrap narrow legal">
-          <h2>Program description</h2>
           <p>
-            {company.name} sends SMS/text messages to drivers and applicants who have provided their
-            mobile number and consented to be contacted. Messages relate to driver applications and
-            onboarding, load and dispatch coordination, check calls, paperwork, settlement, and other
-            account and service notifications.
+            <strong>Website:</strong> <a href="#/">https://nodirexpress.vercel.app/</a>
+          </p>
+          <p>
+            <strong>Direct Policy Links:</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Privacy Policy:</strong>{" "}
+              <a href="#/privacy">https://nodirexpress.vercel.app/#/privacy</a>
+            </li>
+            <li>
+              <strong>SMS Terms of Service:</strong>{" "}
+              <a href="#/sms-terms">https://nodirexpress.vercel.app/#/sms-terms</a>
+            </li>
+          </ul>
+
+          <h2>1. Overview &amp; Consent</h2>
+          <p>
+            By opting in to receive text messages from {company.shortName}, you agree to these SMS
+            Terms &amp; Conditions. You may opt in by submitting your contact details and checking the
+            SMS consent box on our web forms at <a href="#/">https://nodirexpress.vercel.app/</a>.
           </p>
 
-          <h2>How you opt in</h2>
+          <h2>2. Types of Messages You May Receive</h2>
           <p>
-            You opt in by submitting your mobile number and checking the consent box on our
-            application or contact form, or by texting us first at{" "}
-            <a href={company.smsHref}>{company.phone}</a>. Consent to receive SMS is not a condition
-            of employment, engagement, or any purchase.
+            When you opt in to receive SMS messages from {company.shortName}, you can expect to
+            receive transaction- and customer service-related communications, including:
+          </p>
+          <ul>
+            <li>
+              <strong>Load Alerts &amp; Status Updates:</strong> Dispatch notifications, load
+              confirmations, and check-call updates.
+            </li>
+            <li>
+              <strong>Appointment &amp; Onboarding Reminders:</strong> Scheduling updates, pickup and
+              delivery window confirmations, and status alerts.
+            </li>
+            <li>
+              <strong>Account Notifications:</strong> Security verifications, operational messages,
+              paperwork and settlement updates, and customer support responses.
+            </li>
+          </ul>
+
+          <h2>3. Message Frequency</h2>
+          <p>
+            <strong>Messaging frequency may vary</strong> depending on your interactions with our
+            services, active loads, and account activity.
           </p>
 
-          <h2>Message frequency</h2>
+          <h2>4. Cost Notice</h2>
           <p>
-            Message frequency varies based on your application status and dispatch activity. During
-            active dispatch you may receive multiple messages per day.
+            <strong>Message and data rates may apply</strong> to any text messages sent or received
+            as part of this program, according to your mobile carrier&apos;s plan rates.
           </p>
 
-          <h2>Fees</h2>
-          <p>Message and data rates may apply, depending on your mobile carrier and plan.</p>
-
-          <h2>Opting out</h2>
+          <h2>5. Opt-Out Instructions (How to Unsubscribe)</h2>
           <p>
-            Reply <strong>STOP</strong> to any message to unsubscribe. You will receive one
-            confirmation message and then no further texts unless you opt in again. Reply{" "}
-            <strong>HELP</strong> for assistance, or contact us using the details below.
+            You can cancel the SMS service at any time. <strong>To opt out at any time, text STOP.</strong>
+          </p>
+          <p>
+            Upon texting <strong>STOP</strong>, you will receive a final confirmation message stating
+            that you have been unsubscribed. After this, you will no longer receive text messages from
+            {" "}
+            {company.shortName} unless you opt back in.
           </p>
 
-          <h2>Supported carriers</h2>
-          <p>
-            Carriers are not liable for delayed or undelivered messages. Message delivery is subject
-            to effective transmission by your mobile carrier and is not guaranteed.
-          </p>
+          <h2>6. Support Instructions</h2>
+          <p>If you need help or experience issues with the messaging service:</p>
+          <ul>
+            <li>
+              <strong>For assistance, text HELP</strong> or visit our website at{" "}
+              <a href="#/">https://nodirexpress.vercel.app/</a>.
+            </li>
+            <li>
+              You can also contact our support team directly via email at{" "}
+              <a href={`mailto:${company.email}`}>{company.email}</a> or by phone at{" "}
+              <a href={company.phoneHref}>{company.phone}</a>.
+            </li>
+          </ul>
 
-          <h2>Privacy</h2>
+          <h2>7. Privacy &amp; SMS Data Protection</h2>
           <p>
-            Your mobile number and opt-in consent are never shared with third parties or affiliates
-            for marketing purposes. See our <a href="#/privacy">Privacy Policy</a> for full details.
+            Your opt-in consent and phone number will not be sold, rented, or shared with third
+            parties or affiliates for marketing purposes. For complete details on how your personal
+            data is collected and used, please visit our <strong>Privacy Policy</strong> at{" "}
+            <a href="#/privacy">https://nodirexpress.vercel.app/#/privacy</a>.
           </p>
 
           <h2>Contact</h2>

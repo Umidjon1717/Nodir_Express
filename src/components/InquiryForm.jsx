@@ -222,12 +222,19 @@ export default function InquiryForm({ variant = "application" }) {
               ? "Send message"
               : "Submit application"}
         </button>
+        <p className="form-fineprint sms-disclaimer">
+          By opting into SMS from a web form or other medium, you are agreeing to receive SMS
+          messages from {company.name}. This includes SMS messages for conversations (external).
+          Message frequency varies. Message and data rates may apply. See privacy policy at{" "}
+          <a href="#/privacy">nodirexpress.vercel.app/#/privacy</a>. Message HELP for help. Reply
+          STOP to any message to opt out.
+        </p>
         <p className="form-fineprint">
           {FORMSPREE_READY
             ? "Your submission goes straight to our team. "
             : "Submitting opens your email app with the details filled in. "}
-          We reply within one business day. See our <a href="#/sms-terms">SMS Terms</a> and{" "}
-          <a href="#/privacy">Privacy Policy</a>.
+          We reply within one business day. See our <a href="#/sms-terms">SMS Terms &amp; Conditions</a>{" "}
+          and <a href="#/privacy">Privacy Policy</a>.
         </p>
       </div>
     </form>
