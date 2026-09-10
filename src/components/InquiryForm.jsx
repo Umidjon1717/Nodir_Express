@@ -8,8 +8,8 @@ const FORMSPREE_READY = !formEndpoint.includes("YOUR_FORM_ID");
 // SMS Terms & Conditions.
 const SMS_CONSENT_LABEL = (
   <>
-    By checking this box, you agree to receive SMS messages from {company.name} related to
-    conversational purposes. You may reply STOP to opt out at any time. Reply HELP to{" "}
+    By checking this box, you agree to receive SMS messages from NODIR EXPRESS INC related to
+    conversational purposes. You may reply STOP to opt out at any time. Reply to HELP to{" "}
     {company.phone} for assistance. Messages and data rates may apply. Message frequency will vary.
     Learn more on our <a href="#/privacy">privacy policy page</a> and{" "}
     <a href="#/sms-terms">Terms &amp; Conditions</a>.
