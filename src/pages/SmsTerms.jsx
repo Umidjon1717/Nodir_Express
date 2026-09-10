@@ -4,7 +4,7 @@ import { company } from "../data.js";
 export default function SmsTerms() {
   return (
     <>
-      <PageHeader eyebrow="Legal" title="SMS Terms & Conditions (Terms of Service)">
+      <PageHeader eyebrow="Legal" title="SMS Terms & Conditions">
         Effective Date: September 10, 2026
       </PageHeader>
 
@@ -13,109 +13,99 @@ export default function SmsTerms() {
           <p>
             <strong>Website:</strong> <a href="#/">https://nodirexpress.vercel.app/</a>
           </p>
-          <p>
-            <strong>Direct Policy Links:</strong>
-          </p>
           <ul>
             <li>
               <strong>Privacy Policy:</strong>{" "}
               <a href="#/privacy">https://nodirexpress.vercel.app/#/privacy</a>
             </li>
             <li>
-              <strong>SMS Terms of Service:</strong>{" "}
+              <strong>SMS Terms &amp; Conditions:</strong>{" "}
               <a href="#/sms-terms">https://nodirexpress.vercel.app/#/sms-terms</a>
             </li>
           </ul>
 
-          <h2>1. Overview &amp; Consent</h2>
+          <h2>SMS Consent Communication</h2>
           <p>
-            By opting in to receive text messages from {company.shortName}, you agree to these SMS
-            Terms &amp; Conditions.
-          </p>
-          <p>
-            <strong>How you opt in.</strong> The opt-in method is our web form. On the{" "}
-            <a href="#/contact">Contact</a> page (
-            <a href="#/contact">https://nodirexpress.vercel.app/#/contact</a>) or the{" "}
-            <a href="#/drivers">Apply to Drive</a> page (
-            <a href="#/drivers">https://nodirexpress.vercel.app/#/drivers</a>) you enter your mobile
-            number and check a separate SMS consent checkbox that is <strong>not pre-checked</strong>,
-            then submit the form. Checking that box and submitting is your express written consent to
-            receive recurring automated text messages from {company.name} at the number provided.
-            Alternatively, you may opt in by sending us a text first at{" "}
-            <a href={company.smsHref}>{company.phone}</a>. Providing your number and consent is
-            optional and is not a condition of employment or of any purchase.
-          </p>
-          <p>
-            The consent checkbox and the surrounding form disclosure state the program name
-            ({company.name}), that message frequency varies, that message and data rates may apply,
-            the STOP and HELP keywords, and links to this page and to our{" "}
-            <a href="#/privacy">Privacy Policy</a>.
+            The information (Phone Numbers) obtained as part of the SMS consent process will not be
+            shared with third parties for marketing purposes.
           </p>
 
-          <h2>2. Types of Messages You May Receive</h2>
+          <h2>Types of SMS Communications</h2>
           <p>
-            When you opt in to receive SMS messages from {company.shortName}, you can expect to
-            receive transaction- and customer service-related communications, including:
+            If you have consented to receive text messages from {company.name}, you may receive
+            messages related to the following:
+          </p>
+          <ul>
+            <li>Conversation about dispatch, load assignments, and pickup or delivery coordination.</li>
+            <li>Conversation about follow-up messages, check calls, and paperwork.</li>
+            <li>Conversation about driver application and onboarding status.</li>
+            <li>Conversation about account, settlement, and service updates.</li>
+          </ul>
+          <p>
+            Example: &ldquo;Hello, this is {company.name}. Your load #12345 is ready for pickup at
+            [Location] on [Date] at [Time]. You can reply STOP to opt out of SMS messaging from{" "}
+            {company.name} at any time.&rdquo;
+          </p>
+
+          <h2>Message Frequency</h2>
+          <p>
+            Message frequency may vary depending on the type of communication. For example, you may
+            receive up to 5 SMS messages per week related to your loads, conversations, or account
+            status.
+          </p>
+
+          <h2>Potential Fees for SMS Messaging</h2>
+          <p>
+            Please note that standard message and data rates may apply, depending on your
+            carrier&apos;s pricing plan. These fees may vary if the message is sent domestically or
+            internationally.
+          </p>
+
+          <h2>Opt-In Method</h2>
+          <p>
+            You may opt in to receive SMS messages from {company.name} in the following ways:
           </p>
           <ul>
             <li>
-              <strong>Load Alerts &amp; Status Updates:</strong> Dispatch notifications, load
-              confirmations, and check-call updates.
+              By submitting an online form on our <a href="#/contact">Contact</a> page or{" "}
+              <a href="#/drivers">Apply to Drive</a> page and checking the SMS consent box, which is
+              not pre-checked.
             </li>
             <li>
-              <strong>Appointment &amp; Onboarding Reminders:</strong> Scheduling updates, pickup and
-              delivery window confirmations, and status alerts.
-            </li>
-            <li>
-              <strong>Account Notifications:</strong> Security verifications, operational messages,
-              paperwork and settlement updates, and customer support responses.
+              By sending a text message to us first at <a href={company.smsHref}>{company.phone}</a>.
             </li>
           </ul>
 
-          <h2>3. Message Frequency</h2>
+          <h2>Opt-Out Method</h2>
           <p>
-            <strong>Messaging frequency may vary</strong> depending on your interactions with our
-            services, active loads, and account activity.
+            You can opt out of receiving SMS messages at any time. To do so, simply reply
+            &ldquo;STOP&rdquo; to any SMS message you receive. Alternatively, you can contact us
+            directly to request removal from our messaging list.
           </p>
 
-          <h2>4. Cost Notice</h2>
+          <h2>Help</h2>
           <p>
-            <strong>Message and data rates may apply</strong> to any text messages sent or received
-            as part of this program, according to your mobile carrier&apos;s plan rates.
+            If you are experiencing any issues, you can reply with the keyword HELP. Or, you can get
+            help directly from us at <a href={`mailto:${company.email}`}>{company.email}</a>.
           </p>
 
-          <h2>5. Opt-Out Instructions (How to Unsubscribe)</h2>
+          <h2>Additional Options</h2>
           <p>
-            You can cancel the SMS service at any time. <strong>To opt out at any time, text STOP.</strong>
-          </p>
-          <p>
-            Upon texting <strong>STOP</strong>, you will receive a final confirmation message stating
-            that you have been unsubscribed. After this, you will no longer receive text messages from
-            {" "}
-            {company.shortName} unless you opt back in.
+            If you do not wish to receive SMS messages, you can choose not to check the SMS consent
+            box on our forms.
           </p>
 
-          <h2>6. Support Instructions</h2>
-          <p>If you need help or experience issues with the messaging service:</p>
+          <h2>Standard Messaging Disclosures</h2>
           <ul>
+            <li>Message and data rates may apply.</li>
+            <li>You can opt out at any time by texting &ldquo;STOP.&rdquo;</li>
             <li>
-              <strong>For assistance, text HELP</strong> or visit our website at{" "}
-              <a href="#/">https://nodirexpress.vercel.app/</a>.
+              For assistance, text &ldquo;HELP&rdquo; or visit our{" "}
+              <a href="#/privacy">Privacy Policy</a> and{" "}
+              <a href="#/sms-terms">Terms &amp; Conditions</a> pages.
             </li>
-            <li>
-              You can also contact our support team directly via email at{" "}
-              <a href={`mailto:${company.email}`}>{company.email}</a> or by phone at{" "}
-              <a href={company.phoneHref}>{company.phone}</a>.
-            </li>
+            <li>Message frequency may vary.</li>
           </ul>
-
-          <h2>7. Privacy &amp; SMS Data Protection</h2>
-          <p>
-            Your opt-in consent and phone number will not be sold, rented, or shared with third
-            parties or affiliates for marketing purposes. For complete details on how your personal
-            data is collected and used, please visit our <strong>Privacy Policy</strong> at{" "}
-            <a href="#/privacy">https://nodirexpress.vercel.app/#/privacy</a>.
-          </p>
 
           <h2>Contact</h2>
           <p>
