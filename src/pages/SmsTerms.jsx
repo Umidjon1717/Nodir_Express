@@ -10,20 +10,6 @@ export default function SmsTerms() {
 
       <section className="section">
         <div className="wrap narrow legal">
-          <p>
-            <strong>Website:</strong> <a href="#/">https://nodirexpress.vercel.app/</a>
-          </p>
-          <ul>
-            <li>
-              <strong>Privacy Policy:</strong>{" "}
-              <a href="#/privacy">https://nodirexpress.vercel.app/#/privacy</a>
-            </li>
-            <li>
-              <strong>SMS Terms &amp; Conditions:</strong>{" "}
-              <a href="#/sms-terms">https://nodirexpress.vercel.app/#/sms-terms</a>
-            </li>
-          </ul>
-
           <h2>SMS Consent Communication</h2>
           <p>
             The information (Phone Numbers) obtained as part of the SMS consent process will not be
@@ -32,26 +18,27 @@ export default function SmsTerms() {
 
           <h2>Types of SMS Communications</h2>
           <p>
-            If you have consented to receive text messages from {company.name}, you may receive
+            If you have consented to receive text messages from NODIR EXPRESS INC, you may receive
             messages related to the following:
           </p>
           <ul>
-            <li>Conversation about dispatch, load assignments, and pickup or delivery coordination.</li>
-            <li>Conversation about follow-up messages, check calls, and paperwork.</li>
-            <li>Conversation about driver application and onboarding status.</li>
-            <li>Conversation about account, settlement, and service updates.</li>
+            <li>Conversation about Appointment reminders</li>
+            <li>Conversation about Follow-up messages</li>
           </ul>
           <p>
-            Example: &ldquo;Hello, this is {company.name}. Your load #12345 is ready for pickup at
-            [Location] on [Date] at [Time]. You can reply STOP to opt out of SMS messaging from{" "}
-            {company.name} at any time.&rdquo;
+            Example: &ldquo;Hello, this is a friendly reminder of your upcoming appointment with Dr.
+            [Name] at [Location] on [Date] at [Time]. You can reply STOP to opt out of SMS messaging
+            from NODIR EXPRESS INC at any time.&rdquo;
           </p>
 
           <h2>Message Frequency</h2>
           <p>
             Message frequency may vary depending on the type of communication. For example, you may
-            receive up to 5 SMS messages per week related to your loads, conversations, or account
-            status.
+            receive up to 5 SMS messages per week related to your appointments/conversations, etc.
+          </p>
+          <p>
+            Example: &ldquo;Message frequency may vary. You may receive up to 2 SMS messages per week
+            regarding your appointments or account status.&rdquo;
           </p>
 
           <h2>Potential Fees for SMS Messaging</h2>
@@ -62,18 +49,9 @@ export default function SmsTerms() {
           </p>
 
           <h2>Opt-In Method</h2>
-          <p>
-            You may opt in to receive SMS messages from {company.name} in the following ways:
-          </p>
+          <p>You may opt in to receive SMS messages from NODIR EXPRESS INC in the following ways:</p>
           <ul>
-            <li>
-              By submitting an online form on our <a href="#/contact">Contact</a> page or{" "}
-              <a href="#/drivers">Apply to Drive</a> page and checking the SMS consent box, which is
-              not pre-checked.
-            </li>
-            <li>
-              By sending a text message to us first at <a href={company.smsHref}>{company.phone}</a>.
-            </li>
+            <li>By submitting an online form</li>
           </ul>
 
           <h2>Opt-Out Method</h2>
@@ -102,20 +80,10 @@ export default function SmsTerms() {
             <li>
               For assistance, text &ldquo;HELP&rdquo; or visit our{" "}
               <a href="#/privacy">Privacy Policy</a> and{" "}
-              <a href="#/sms-terms">Terms &amp; Conditions</a> pages.
+              <a href="#/sms-terms">Terms and Conditions</a> pages.
             </li>
             <li>Message frequency may vary.</li>
           </ul>
-
-          <h2>Contact</h2>
-          <p>
-            {company.name}
-            <br />
-            {company.addressLines[0]}, {company.addressLines[1]}
-            <br />
-            <a href={company.phoneHref}>{company.phone}</a> ·{" "}
-            <a href={`mailto:${company.email}`}>{company.email}</a>
-          </p>
         </div>
       </section>
     </>
