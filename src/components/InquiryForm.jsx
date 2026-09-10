@@ -28,7 +28,7 @@ const APPLICATION_FIELDS = [
   {
     name: "consent",
     label:
-      "I agree to be contacted by Nodir Express Inc by phone, email, and SMS about driving opportunities. Message and data rates may apply. Reply STOP to opt out, HELP for help.",
+      "I agree to receive recurring SMS text messages from Nodir Express Inc at the mobile number I provided, about my driver application, onboarding, and dispatch. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. Consent is not a condition of employment. See the Privacy Policy and SMS Terms of Service linked below.",
     type: "checkbox",
     required: true,
   },
@@ -42,7 +42,7 @@ const CONTACT_FIELDS = [
   {
     name: "consent",
     label:
-      "I agree to be contacted by Nodir Express Inc about my inquiry. Message and data rates may apply. Reply STOP to opt out, HELP for help.",
+      "I agree to receive recurring SMS text messages from Nodir Express Inc at the mobile number I provided, in reply to my inquiry. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. Consent is not a condition of any purchase. See the Privacy Policy and SMS Terms of Service linked below.",
     type: "checkbox",
     required: true,
   },
@@ -147,8 +147,22 @@ export default function InquiryForm({ variant = "application" }) {
     );
   }
 
+  const optInPath = variant === "contact" ? "#/contact" : "#/drivers";
+
   return (
     <form className="inquiry-form" onSubmit={onSubmit} noValidate>
+      <div className="optin-how">
+        <strong>How to opt in to text messages</strong>
+        <p>
+          This web form at{" "}
+          <a href={optInPath}>nodirexpress.vercel.app/{optInPath}</a> is how you give consent to
+          receive SMS from {company.name}. Enter your mobile number in the field below, check the SMS
+          consent box (it is not pre-checked), and press{" "}
+          {variant === "contact" ? "“Send message”" : "“Submit application”"}. You can also opt in by
+          texting us first at <a href={company.smsHref}>{company.phone}</a>. Providing a mobile number
+          and consent is optional and is not a condition of {variant === "contact" ? "any purchase" : "employment"}.
+        </p>
+      </div>
       {fields.map((f) => {
         const id = "f-" + f.name;
         const err = errors[f.name];
@@ -223,12 +237,13 @@ export default function InquiryForm({ variant = "application" }) {
               : "Submit application"}
         </button>
         <p className="form-fineprint sms-disclaimer">
-          By providing your phone number and clicking submit, you consent to receive SMS
-          notifications, order alerts, and account updates from {company.shortName}. Messaging
-          frequency may vary. Message and data rates may apply. To opt out at any time, text STOP.
-          For assistance, text HELP or visit our website at{" "}
-          <a href="#/">https://nodirexpress.vercel.app/</a>. SMS consent is not shared with third
-          parties or affiliates. Please review our <a href="#/privacy">Privacy Policy</a> and{" "}
+          <strong>{company.name} SMS program.</strong> By providing your phone number and submitting
+          this form, you consent to receive SMS notifications, load and dispatch alerts, application
+          and onboarding updates, and account messages from {company.name}. Messaging frequency may
+          vary. Message and data rates may apply. To opt out at any time, text STOP. For assistance,
+          text HELP or visit our website at <a href="#/">https://nodirexpress.vercel.app/</a>. SMS
+          consent is not shared with third parties or affiliates and is not a condition of employment
+          or purchase. Please review our <a href="#/privacy">Privacy Policy</a> and{" "}
           <a href="#/sms-terms">Terms of Service</a>.
         </p>
         <p className="form-fineprint">

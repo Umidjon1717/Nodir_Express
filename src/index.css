@@ -1156,6 +1156,31 @@ textarea:focus-visible {
   color: var(--muted);
   max-width: 44ch;
 }
+.form-fineprint.sms-disclaimer {
+  max-width: none;
+  width: 100%;
+}
+.optin-how {
+  grid-column: 1 / -1;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--muted);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+.optin-how strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--ink);
+}
+.optin-how p {
+  margin: 0;
+}
+.optin-how a {
+  color: var(--red-ink);
+}
 .form-fineprint a,
 .consent-note a,
 .legal a,

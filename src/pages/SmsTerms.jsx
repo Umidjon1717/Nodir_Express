@@ -30,8 +30,26 @@ export default function SmsTerms() {
           <h2>1. Overview &amp; Consent</h2>
           <p>
             By opting in to receive text messages from {company.shortName}, you agree to these SMS
-            Terms &amp; Conditions. You may opt in by submitting your contact details and checking the
-            SMS consent box on our web forms at <a href="#/">https://nodirexpress.vercel.app/</a>.
+            Terms &amp; Conditions.
+          </p>
+          <p>
+            <strong>How you opt in.</strong> The opt-in method is our web form. On the{" "}
+            <a href="#/contact">Contact</a> page (
+            <a href="#/contact">https://nodirexpress.vercel.app/#/contact</a>) or the{" "}
+            <a href="#/drivers">Apply to Drive</a> page (
+            <a href="#/drivers">https://nodirexpress.vercel.app/#/drivers</a>) you enter your mobile
+            number and check a separate SMS consent checkbox that is <strong>not pre-checked</strong>,
+            then submit the form. Checking that box and submitting is your express written consent to
+            receive recurring automated text messages from {company.name} at the number provided.
+            Alternatively, you may opt in by sending us a text first at{" "}
+            <a href={company.smsHref}>{company.phone}</a>. Providing your number and consent is
+            optional and is not a condition of employment or of any purchase.
+          </p>
+          <p>
+            The consent checkbox and the surrounding form disclosure state the program name
+            ({company.name}), that message frequency varies, that message and data rates may apply,
+            the STOP and HELP keywords, and links to this page and to our{" "}
+            <a href="#/privacy">Privacy Policy</a>.
           </p>
 
           <h2>2. Types of Messages You May Receive</h2>
